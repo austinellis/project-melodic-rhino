@@ -1,4 +1,4 @@
-project_codename
+project-codename-generator
 ================
 
 Generates random word pairings for project names
