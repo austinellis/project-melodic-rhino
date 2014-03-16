@@ -6,7 +6,7 @@ Generates random word pairings for project names
 A work in progress. This project will generate random project code names from provided wordlists.
 
 Wordlists so far include:
-Animals
+Animals \n
 Greek mythological figures
 Adjectives
 
