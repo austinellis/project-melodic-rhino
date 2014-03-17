@@ -7,6 +7,7 @@
 # "Project Flying Squirrel"
 
 import sys
+import argparse
 
 
 def open_wordlist(wordtype):
@@ -14,25 +15,30 @@ def open_wordlist(wordtype):
     wordlist = {}
     i = 0
     for line in f:
-        row = line.title()
-        for word in row:
-            print word
-            if word not in wordlist.keys():
-                wordlist[i] = word
-                i += 1
-                #print wordlist
+        word = line.title()
+        if word not in wordlist.values():
+            wordlist[i] = word
+            i += 1
+    return wordlist
 
 
-def generate():
-    animal_file = 'animals.txt'
+def print_wordlist(wordlist):
+    wordlist_tuples = wordlist.items()
+    for wordlist_tuples in wordlist_tuples[:]:
+        print wordlist_tuples[0], ':', wordlist_tuples[1],
+    pass
+
+
+def generate(wordlist1, ):
+    animal_file = 'wordlists/animals.txt'
     animals = open_wordlist(animal_file)
-    print animals
 
 
 def main():
-     #parameters = sys.argv[]
-     # for p in parameters:
-     generate()
+    # parameters = sys.argv[]
+    # for p in parameters:
+
+    generate()
 
 
 if __name__ == '__main__':
