@@ -39,15 +39,14 @@ def get_animal():
     filename = 'wordlists/animals.txt'
     wordlist_dict = file_to_dict(filename)
     animal = get_random(wordlist_dict)
-    print type(animal)
-    return animal
+    return animal.rstrip('\n')
 
 
 def get_greakgod():
     filename = 'wordlists/greekgods.txt'
     wordlist_dict = file_to_dict(filename)
     greekgod = get_random(wordlist_dict)
-    return greekgod
+    return greekgod.rstrip('\n')
 
 
 
@@ -55,7 +54,7 @@ def get_adjective():
     filename = 'wordlists/adjectives.txt'
     wordlist_dict = file_to_dict(filename)
     adjective = get_random(wordlist_dict)
-    return adjective
+    return adjective.rstrip('\n')
 
 
 def print_wordlist(wordlist):
@@ -81,19 +80,14 @@ def main():
 
     if args.animals:
         animal = get_animal()
-        animal = animal.rstrip('\n')
-
 
     if args.greekgods:
         greekgod = get_greakgod()
-        greekgod = greekgod.rstrip('\n')
-
 
     if args.adjectives:
         adjective = get_adjective()
-        adjective = adjective.rstrip('\n')
 
-    project_name_output = 'Project ' + adjective + ' ' +  greekgod
+    project_name_output = 'Project ' + adjective + ' ' +  animal
     print project_name_output
 
 
