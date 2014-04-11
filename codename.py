@@ -8,18 +8,30 @@
 
 import sys
 import argparse
+import os
 
 
-def open_wordlist(wordtype):
-    f = open(wordtype, 'rU')
-    wordlist = {}
+def open_wordlist(filename):
+    """
+    Takes in a filename including path, opens the file,
+    and returns a dict
+    """
+    f = open(filename, 'rU')
+    wordlist_dict = {}
     i = 0
     for line in f:
         word = line.title()
         if word not in wordlist.values():
             wordlist[i] = word
             i += 1
-    return wordlist
+    #for key, word in wordlist.iteritems():
+    #    print key, word
+    return wordlist_dict
+
+def generate_wordlist(wordlist1):
+    file_name = wordlist1
+    words = open_wordlist(file_name)
+
 
 
 def print_wordlist(wordlist):
@@ -29,16 +41,25 @@ def print_wordlist(wordlist):
     pass
 
 
-def generate(wordlist1, ):
-    animal_file = 'wordlists/animals.txt'
-    animals = open_wordlist(animal_file)
+
 
 
 def main():
-    # parameters = sys.argv[]
-    # for p in parameters:
+    parser = argparse.ArgumentParser()
+    #parser.add_argument('customfile', help='needs a filename', action='store_true')
+    parser.add_argument('-a', '--animals', help='Use animals wordlist', action='store_true')
+    parser.add_argument('-gg', '--greekgods', help='Use Greek gods wordlist', action='store_true')
+    args = parser.parse_args()
 
-    generate()
+    #if args.filename:
+    #    generate_wordlist(args.customfile)
+    if args.animals:
+        filename = 'wordlists/animals.txt'
+        #filepath = os.path.abspath(filename)
+        generate_wordlist(filename)
+    if args.greekgods:
+        filename = 'wordlists/greekgods.txt'
+        generate_wordlist(filename)
 
 
 if __name__ == '__main__':
