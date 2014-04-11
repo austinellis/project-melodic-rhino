@@ -1,198 +1,198 @@
-beautiful
-clean
-drab
-elegant
-fancy
+beautiful 
+clean 
+drab 
+elegant 
+fancy 
 glamorous
-handsome
+ handsome 
 long
-magnificent
+ magnificent 
 sparkling
-ugliest
-unsightly
-wide-eyed
-red
-orange
+ ugliest
+ unsightly
+ wide-eyed
+red 
+orange 
 yellow
-green
+ green 
 blue
-purple
-gray
-black
-white
-alive
+ purple
+ gray
+ black
+ white
+alive 
 better
-careful
+ careful 
 clever
-dead
+ dead 
 easy
-famous
-gifted
-helpful
-odd
+ famous
+ gifted
+ helpful 
+odd 
 powerful
-rich
-shy
-tender
-vast
-wrong
+ rich
+ shy
+ tender
+ vast
+ wrong
 angry
-bewildered
-clumsy
-defeated
-embarrassed
-fierce
-grumpy
+ bewildered
+ clumsy
+ defeated
+ embarrassed
+ fierce 
+grumpy 
 helpless
-jealous
-lazy
+ jealous
+ lazy 
 mysterious
-nervous
-obnoxious
-panicky
-repulsive
-scary
-thoughtless
+ nervous
+ obnoxious
+ panicky 
+repulsive 
+scary 
+thoughtless 
 uptight
-worried
+ worried
 agreeable
-brave
-calm
+ brave 
+calm 
 delightful
-eager
-faithful
-gentle
+ eager 
+faithful 
+gentle 
 happy
-jolly
+ jolly 
 kind
-lively
-nice
-obedient
-proud
-relieved
-silly
-thankful
+ lively
+ nice
+ obedient
+ proud
+ relieved
+ silly 
+thankful 
 victorious
-witty
-zealous
+ witty
+ zealous
 broad
-chubby
+ chubby 
 crooked
-curved
-deep
+ curved
+ deep 
 flat
-high
-hollow
+ high
+ hollow 
 low
-narrow
+ narrow 
 round
-shallow
+ shallow 
 skinny
-square
-steep
+ square
+ steep 
 straight
-wide
+ wide
 big
-colossal
-fat
-gigantic
-great
-huge
+ colossal
+ fat
+ gigantic
+ great
+ huge 
 immense
-large
-little
-mammoth
-massive
-miniature
-petite
-puny
-scrawny
-short
-small
+ large
+ little
+ mammoth
+ massive
+ miniature
+ petite
+ puny
+ scrawny
+ short 
+small 
 tall
-teeny
-teeny-tiny
-tiny
+ teeny
+ teeny-tiny
+ tiny
 deafening
-faint
-hissing
+ faint 
+hissing 
 loud
-melodic
-noisy
-purring
-quiet
-raspy
-screeching
-thundering
-voiceless
+ melodic
+ noisy
+ purring
+ quiet
+ raspy
+ screeching
+ thundering
+ voiceless 
 whispering
 ancient
-brief
-early
-fast
-late
-long
-modern
-old
-old-fashioned
-quick
-rapid
-short
-slow
+ brief
+ early
+ fast
+ late
+ long
+ modern
+ old
+ old-fashioned
+ quick
+ rapid
+ short 
+slow 
 swift
-young
-bitter
-delicious
-fresh
+ young
+bitter 
+delicious 
+fresh 
 greasy
-juicy
-hot
-icy
-loose
-melted
-nutritious
-prickly
+ juicy
+ hot
+ icy
+ loose
+ melted
+ nutritious
+ prickly 
 rainy
-rotten
+ rotten 
 salty
-sticky
-strong
-sweet
-tart
-tasteless
-uneven
-weak
-wet
-wooden
-yummy
-boiling
-breeze
+ sticky
+ strong
+ sweet
+ tart
+ tasteless
+ uneven
+ weak
+ wet
+ wooden
+ yummy
+boiling 
+breeze 
 broken
-bumpy
-chilly
-cold
-cool
+ bumpy
+ chilly
+ cold
+ cool 
 creepy
-crooked
+ crooked 
 cuddly
-curly
-damaged
-damp
-dirty
-dry
-dusty
-filthy
-flaky
-fluffy
-freezing
+ curly
+ damaged
+ damp
+ dirty
+ dry
+ dusty
+ filthy
+ flaky
+ fluffy
+ freezing 
 warm
 abundant
-empty
-few
+ empty 
+few 
 full
-heavy
+ heavy 
 light
-many
-numerous
+ many
+ numerous 
 sparse
-substantial
+ substantial
