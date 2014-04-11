@@ -7,11 +7,12 @@
 # "Project Flying Squirrel"
 
 import sys
-import argparse
 import os
+import argparse
+import random
 
 
-def open_wordlist(filename):
+def file_to_dict(filename):
     """
     Takes in a filename including path, opens the file,
     and returns a dict
@@ -21,45 +22,79 @@ def open_wordlist(filename):
     i = 0
     for line in f:
         word = line.title()
-        if word not in wordlist.values():
-            wordlist[i] = word
+        if word not in wordlist_dict.values():
+            wordlist_dict[i] = word
             i += 1
-    #for key, word in wordlist.iteritems():
+    # for key, word in wordlist.iteritems():
     #    print key, word
     return wordlist_dict
 
-def generate_wordlist(wordlist1):
-    file_name = wordlist1
-    words = open_wordlist(file_name)
 
+def get_random(wordlist_dict):
+    word = random.choice(wordlist_dict.values())
+    return word
+
+
+def get_animal():
+    filename = 'wordlists/animals.txt'
+    wordlist_dict = file_to_dict(filename)
+    animal = get_random(wordlist_dict)
+    print type(animal)
+    return animal
+
+
+def get_greakgod():
+    filename = 'wordlists/greekgods.txt'
+    wordlist_dict = file_to_dict(filename)
+    greekgod = get_random(wordlist_dict)
+    return greekgod
+
+
+
+def get_adjective():
+    filename = 'wordlists/adjectives.txt'
+    wordlist_dict = file_to_dict(filename)
+    adjective = get_random(wordlist_dict)
+    return adjective
 
 
 def print_wordlist(wordlist):
-    wordlist_tuples = wordlist.items()
-    for wordlist_tuples in wordlist_tuples[:]:
-        print wordlist_tuples[0], ':', wordlist_tuples[1],
-    pass
-
-
-
+    for key, word in wordlist.iteritems():
+        print key, word
 
 
 def main():
     parser = argparse.ArgumentParser()
-    #parser.add_argument('customfile', help='needs a filename', action='store_true')
-    parser.add_argument('-a', '--animals', help='Use animals wordlist', action='store_true')
-    parser.add_argument('-gg', '--greekgods', help='Use Greek gods wordlist', action='store_true')
+    parser.add_argument('-f', '--file', help='needs a filename')
+    parser.add_argument('-a', '--animals',
+                        help='Use animals wordlist', action='store_true')
+    parser.add_argument('-gg', '--greekgods',
+                        help='Use Greek gods wordlist', action='store_true')
+    parser.add_argument('-adj', '--adjectives',
+                        help='include adjectives', action='store_true')
     args = parser.parse_args()
 
-    #if args.filename:
-    #    generate_wordlist(args.customfile)
+
+    if args.file:
+        wordlist_dict = file_to_dict(args.file)
+        print get_random(wordlist_dict)
+
     if args.animals:
-        filename = 'wordlists/animals.txt'
-        #filepath = os.path.abspath(filename)
-        generate_wordlist(filename)
+        animal = get_animal()
+        animal = animal.rstrip('\n')
+
+
     if args.greekgods:
-        filename = 'wordlists/greekgods.txt'
-        generate_wordlist(filename)
+        greekgod = get_greakgod()
+        greekgod = greekgod.rstrip('\n')
+
+
+    if args.adjectives:
+        adjective = get_adjective()
+        adjective = adjective.rstrip('\n')
+
+    project_name_output = 'Project ' + adjective + ' ' +  greekgod
+    print project_name_output
 
 
 if __name__ == '__main__':
