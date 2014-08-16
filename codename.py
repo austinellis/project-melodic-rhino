@@ -89,7 +89,6 @@ def display_project(random_word, random_adj=False):
     return project_name
 
 
-
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--file', help='needs a filename')
@@ -99,6 +98,8 @@ def main():
                         help='Use Greek gods wordlist', action='store_true')
     parser.add_argument('-adj', '--adjectives',
                         help='include adjectives', action='store_true')
+    parser.add_argument('-eg', '--egyptiangods',
+                        help='Use Egyption gods wordlist', action='store_true')
     args = parser.parse_args()
     random_word = []
     random_adj = False
@@ -111,6 +112,9 @@ def main():
 
     if args.greekgods:
         random_word.append(get_greakgod())
+
+    if args.egyptiangods:
+        random_word.append(get_egyptiangods())
 
     if args.adjectives:
         random_adj = get_adjective()
