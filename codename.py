@@ -1,7 +1,5 @@
 #!/usr/bin/python -tt
 # Copyright Austin Ellis
-# Licensed under the Apache License, Version 2.0
-# http://www.apache.org/licenses/LICENSE-2.0
 
 # Uses word lists to generate random project "code names" like
 # "Project Flying Squirrel"
@@ -29,10 +27,23 @@ def file_to_dict(filename):
     #    print key, word
     return wordlist_dict
 
+#wordtype = "animal"
+
+
+def get_word(wordtype, num=1):
+    if wordtype == 'adjective':
+        pass
+    if wordtype == 'animal':
+        pass
+    if wordtype == 'greekgod':
+        pass
+    if wordtype == 'customfile':
+        pass
+
 
 def get_random(wordlist_dict):
     word = random.choice(wordlist_dict.values())
-    return word
+    return word.rstrip('\n')
 
 
 def get_animal():
@@ -49,7 +60,6 @@ def get_greakgod():
     return greekgod.rstrip('\n')
 
 
-
 def get_adjective():
     filename = 'wordlists/adjectives.txt'
     wordlist_dict = file_to_dict(filename)
@@ -62,6 +72,21 @@ def print_wordlist(wordlist):
         print key, word
 
 
+def display_project(random_word, random_adj=False):
+    new_string = []
+    if random_adj != False:
+        new_string.append(random_adj)
+        for item in random_word:
+            new_string.append(item)
+    else:
+        for item in random_word:
+            new_string.append(item)
+
+    join_str = ' '.join(new_string)
+    return 'Project' + ' ' + join_str
+
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--file', help='needs a filename')
@@ -72,23 +97,24 @@ def main():
     parser.add_argument('-adj', '--adjectives',
                         help='include adjectives', action='store_true')
     args = parser.parse_args()
-
-
+    random_word = []
     if args.file:
         wordlist_dict = file_to_dict(args.file)
-        print get_random(wordlist_dict)
+        random_word.append(get_random(wordlist_dict))
 
     if args.animals:
-        animal = get_animal()
+        random_word.append(get_animal())
 
     if args.greekgods:
-        greekgod = get_greakgod()
+        random_word.append(get_greakgod())
 
     if args.adjectives:
-        adjective = get_adjective()
+        random_adj = get_adjective()
 
-    project_name_output = 'Project ' + adjective + ' ' +  animal
-    print project_name_output
+    #project_name_output = 'Project ' + ' ' + random_word
+    # print project_name_output
+    project_name = display_project(random_word, random_adj)
+    print project_name
 
 
 if __name__ == '__main__':

@@ -1,35 +1,35 @@
-beautiful 
-clean 
-drab 
-elegant 
-fancy 
+beautiful
+clean
+drab
+elegant
+fancy
 glamorous
-handsome 
+handsome
 long
-magnificent 
+magnificent
 sparkling
 ugliest
 unsightly
 wide-eyed
-red 
-orange 
+red
+orange
 yellow
-green 
+green
 blue
 purple
 gray
 black
 white
-alive 
+alive
 better
-careful 
+careful
 clever
-dead 
+dead
 easy
 famous
 gifted
-helpful 
-odd 
+helpful
+odd
 powerful
 rich
 shy
@@ -41,55 +41,55 @@ bewildered
 clumsy
 defeated
 embarrassed
-fierce 
-grumpy 
+fierce
+grumpy
 helpless
 jealous
-lazy 
+lazy
 mysterious
 nervous
 obnoxious
-panicky 
-repulsive 
-scary 
-thoughtless 
+panicky
+repulsive
+scary
+thoughtless
 uptight
 worried
 agreeable
-brave 
-calm 
+brave
+calm
 delightful
-eager 
-faithful 
-gentle 
+eager
+faithful
+gentle
 happy
-jolly 
+jolly
 kind
 lively
 nice
 obedient
 proud
 relieved
-silly 
-thankful 
+silly
+thankful
 victorious
 witty
 zealous
 broad
-chubby 
+chubby
 crooked
 curved
-deep 
+deep
 flat
 high
-hollow 
+hollow
 low
-narrow 
+narrow
 round
-shallow 
+shallow
 skinny
 square
-steep 
+steep
 straight
 wide
 big
@@ -97,7 +97,7 @@ colossal
 fat
 gigantic
 great
-huge 
+huge
 immense
 large
 little
@@ -107,15 +107,15 @@ miniature
 petite
 puny
 scrawny
-short 
-small 
+short
+small
 tall
 teeny
 teeny-tiny
 tiny
 deafening
-faint 
-hissing 
+faint
+hissing
 loud
 melodic
 noisy
@@ -124,7 +124,7 @@ quiet
 raspy
 screeching
 thundering
-voiceless 
+voiceless
 whispering
 ancient
 brief
@@ -137,13 +137,13 @@ old
 old-fashioned
 quick
 rapid
-short 
-slow 
+short
+slow
 swift
 young
-bitter 
-delicious 
-fresh 
+bitter
+delicious
+fresh
 greasy
 juicy
 hot
@@ -151,9 +151,9 @@ icy
 loose
 melted
 nutritious
-prickly 
+prickly
 rainy
-rotten 
+rotten
 salty
 sticky
 strong
@@ -165,15 +165,15 @@ weak
 wet
 wooden
 yummy
-boiling 
-breeze 
+boiling
+breeze
 broken
 bumpy
 chilly
 cold
-cool 
+cool
 creepy
-crooked 
+crooked
 cuddly
 curly
 damaged
@@ -184,15 +184,15 @@ dusty
 filthy
 flaky
 fluffy
-freezing 
+freezing
 warm
 abundant
-empty 
-few 
+empty
+few
 full
-heavy 
+heavy
 light
 many
-numerous 
+numerous
 sparse
 substantial

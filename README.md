@@ -1,15 +1,17 @@
-project-codename-generator
+# Project Melodic Rhino
 ================
 
-Generates random word pairings for project names
+Generates random word pairings for project names (such as "Project Melodic Rhino")
 
-A work in progress. This project will generate random project code names from provided wordlists.
+A work in progress. This project generates random project code names from provided wordlists.
+
 
 ###Wordlists so far include:
 
-- Animals
-- Greek mythological figures
-- Adjectives
+- Animals (-a, --animals)
+- Greek mythological figures (-gg, --greekgods)
+- Adjectives (-adj, --adjectives)
+- Custom wordlists (-f filename and path)
 
 
 
