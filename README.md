@@ -11,7 +11,7 @@ A work in progress. This project generates random project code names from provid
 - Animals (-a, --animals)
 - Greek mythological figures (-gg, --greekgods)
 - Adjectives (-adj, --adjectives)
-- Custom wordlists (-f filename and path)
+- Custom wordlists (-f, --file filename and path)
 
 
 

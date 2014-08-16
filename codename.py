@@ -83,7 +83,10 @@ def display_project(random_word, random_adj=False):
             new_string.append(item)
 
     join_str = ' '.join(new_string)
-    return 'Project' + ' ' + join_str
+    project_name = 'Project' + ' ' + join_str
+    with open('results.txt', 'a') as results_file:
+        results_file.write(project_name + "\n")
+    return project_name
 
 
 
@@ -98,6 +101,7 @@ def main():
                         help='include adjectives', action='store_true')
     args = parser.parse_args()
     random_word = []
+    random_adj = False
     if args.file:
         wordlist_dict = file_to_dict(args.file)
         random_word.append(get_random(wordlist_dict))

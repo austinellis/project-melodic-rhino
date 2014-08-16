@@ -4,3 +4,26 @@ Tempest
 Dragon
 Griffin
 Bagheera
+Pheonix
+Sphinx
+Minotaur
+Lochness Monster
+Jackal
+Pegasus
+Unicorn
+Manticore
+Wizard
+Mermaid
+Nymph
+Banshee
+Goblin
+Orc
+Chupacabra
+Siren
+Oracle
+Genie
+Ghoul
+Golem
+Incubus
+Succubus
+Krampus
